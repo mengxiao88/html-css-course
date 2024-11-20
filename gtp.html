@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-white font-sans">
+    <header class="flex items-center justify-between px-4 py-2 shadow-md">
+        <div class="flex items-center space-x-4">
+            <i class="fab fa-youtube text-red-600 text-3xl"></i>
+            <span class="text-xl font-semibold">YouTube</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search" class="border rounded-full px-4 py-2 w-80">
+            <button class="bg-gray-200 px-4 py-2 rounded-full">
+                <i class="fas fa-search"></i>
+            </button>
+            <i class="fas fa-user-circle text-3xl text-gray-600"></i>
+        </div>
+    </header>
+
+    <main class="flex">
+        <!-- Sidebar -->
+        <nav class="w-64 bg-gray-100 h-screen p-4 space-y-4">
+            <div class="space-y-2">
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-home text-xl"></i>
+                    <span>Home</span>
+                </button>
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-play text-xl"></i>
+                    <span>Shorts</span>
+                </button>
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-stream text-xl"></i>
+                    <span>Subscriptions</span>
+                </button>
+            </div>
+            <div class="border-t pt-4 space-y-2">
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-history text-xl"></i>
+                    <span>History</span>
+                </button>
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-list text-xl"></i>
+                    <span>Playlists</span>
+                </button>
+                <button class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                    <i class="fas fa-clock text-xl"></i>
+                    <span>Watch Later</span>
+                </button>
+            </div>
+            <div class="border-t pt-4">
+                <h2 class="text-sm text-gray-500 uppercase mb-2">Subscriptions</h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                        <i class="fas fa-circle text-xl text-gray-500"></i>
+                        <span>Programming with Mosh</span>
+                    </li>
+                    <li class="flex items-center space-x-4 py-2 px-4 rounded-lg hover:bg-gray-200">
+                        <i class="fas fa-circle text-xl text-gray-500"></i>
+                        <span>SuperSimpleDev</span>
+                    </li>
+                </ul>
+                <button class="text-blue-500 mt-2">Show more</button>
+            </div>
+        </nav>
+
+        <!-- Content Area -->
+        <section class="flex-1 p-4">
+            <div class="flex space-x-4 overflow-x-auto py-4">
+                <button class="bg-gray-200 rounded-full px-4 py-2">All</button>
+                <button class="bg-gray-200 rounded-full px-4 py-2">APIs</button>
+                <button class="bg-gray-200 rounded-full px-4 py-2">Computer Programming</button>
+                <button class="bg-gray-200 rounded-full px-4 py-2">Podcasts</button>
+                <button class="bg-gray-200 rounded-full px-4 py-2">Music</button>
+            </div>
+            <div class="grid grid-cols-4 gap-4">
+                <!-- Example Video Cards -->
+                <div class="shadow rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/200x120" alt="Sample video thumbnail" class="w-full">
+                    <div class="p-2">
+                        <h3 class="font-semibold text-sm">HTML CSS Full Course - Beginner to Pro</h3>
+                        <p class="text-xs text-gray-600">SuperSimpleDev • 12M views • 2 years ago</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/200x120" alt="Sample video thumbnail" class="w-full">
+                    <div class="p-2">
+                        <h3 class="font-semibold text-sm">Python Full Course for free (2024)</h3>
+                        <p class="text-xs text-gray-600">Bro Code • 1.4M views • 2 months ago</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/200x120" alt="Sample video thumbnail" class="w-full">
+                    <div class="p-2">
+                        <h3 class="font-semibold text-sm">Artificial Intelligence: Fundamentals...</h3>
+                        <p class="text-xs text-gray-600">Tsinghua University • 20K views • 2 weeks ago</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-lg overflow-hidden">
+                    <img src="https://placehold.co/200x120" alt="Sample video thumbnail" class="w-full">
+                    <div class="p-2">
+                        <h3 class="font-semibold text-sm">Deep Work Music for Coders</h3>
+                        <p class="text-xs text-gray-600">Chill Flow • 347K views • 6 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
